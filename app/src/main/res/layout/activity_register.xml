@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/bg_g">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/help"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_blue_help"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerCredits"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_blue_credits"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="22dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="213dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="52dp"
+            android:text="Registrati a MultiChat!"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SpUsage,TextSizeCheck" />
+        <EditText
+            android:id="@+id/registerNome"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_1"
+            android:hint="Inserisci il nome..."
+            android:inputType="text"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/input_1"
+            android:hint="Inserisci la mail..."
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/nome"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="108dp" />
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_1"
+            android:textColorHint="#ffffff"
+            android:hint="Inserisci la password..."
+            android:inputType="textPassword"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hai già un account?"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+        <TextView
+            android:id="@+id/registerLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accedi"
+            android:layout_gravity="center"
+            android:layout_marginTop="-19dp"
+            android:layout_marginLeft="55dp"
+            android:textColor="#03A9F4"
+            tools:ignore="HardcodedText,MissingConstraints" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerRegistrati"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_blue_register"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_g">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/help"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_blue_help"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/credits"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_blue_credits"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="22dp" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="206dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Esegui l'accesso a multichat"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+        <EditText
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/loginName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Inserisci il nome..."
+            android:inputType="text"
+            android:padding="10dp"
+            tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints" />
+
+        <EditText
+            android:gravity="center"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/loginPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_1"
+            android:ems="10"
+            android:hint="Inserisci la password..."
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:text="Non hai un account?"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/loginRegistrati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="-20dp"
+            android:text="Registrati"
+            android:textColor="#03A9F4"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="-80dp"
+    android:text="Password o nome dimenticato?"
+    />
+        <TextView
+            android:id="@+id/loginRecupero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="-20dp"
+            android:text="Recuperali"
+            android:textColor="#03A9F4"
+            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_blue_login"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".segreto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-120dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-85dp"
+            android:src="@drawable/giphy"/>
+
+    <TextView
+        android:id="@+id/romano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Il prof Romano è il migliore     di sempre                   "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-450dp"
+        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/mondo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-40dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:visibility="invisible"
+            android:text="  del mondo"/>
+        <View
+            android:id="@+id/linea"
+            android:layout_width="140dp"
+            android:layout_height="5dp"
+            android:background="#E91E63"
+            android:visibility="invisible"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="65dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/titolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bravo! hai scoperto l'Easter Egg!"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Torna indietro"
+            android:layout_marginTop="430dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginStart="130dp"
+            android:background="@drawable/btn_shape_capsule"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:id="@+id/btnsegreto"
+            />
+    </LinearLayout>
+</RelativeLayout>

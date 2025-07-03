@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_g"
+    tools:context=".Home">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="60dp">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_icon"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MultiChat"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textColor="#99d9ea"
+        android:textAllCaps="true"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chat"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_chat_blue" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scelta"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_avatar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/impostazioni"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_settings" />
+
+    </LinearLayout>
+</RelativeLayout>

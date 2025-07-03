@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchermataConversazioni"
+    android:background="@drawable/bg_g">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversazioni"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:textColor="#1be2e2"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Ciao"
+            android:padding="150dp"
+
+            android:textColor="#ffffff"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/convborder"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:fillViewport="true"
+        android:layout_marginTop="200dp"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:isScrollContainer="true"
+            android:id="@+id/TextConv">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <ImageView
+        android:id="@+id/indietroyu"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Indietro"
+        android:textColor="@color/black"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        app:cornerRadius="50dp"
+        android:background="@drawable/button_back"
+        />
+    <ImageView
+        android:id="@+id/btnNuovo"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Nuovo"
+        android:textColor="@color/black"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="260dp"
+        app:cornerRadius="50dp"
+        android:background="@drawable/button_nuovo"
+        />
+
+</RelativeLayout>
